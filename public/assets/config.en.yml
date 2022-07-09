@@ -1,0 +1,230 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "LesGV.com"
+subtitle: "Dashboard"
+logo: "assets/images/logosquare2.svg"
+#icon: "fas fa-chess-board" # Optional icon
+
+header: true
+footer: 'LesGV.com manages the IT portion of <a href="https://www.lesgrandsvoisins.com">LesGrandsVoisinss.com</a> and <a href="https://www.agoodvilalge.com">AGoodVillage.com</a>.'
+columns: "2"
+defaults:
+  layout: "list"
+  colorTheme: "light"
+stylesheet:
+  - "assets/custom.css"
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+## Optional message
+message:
+  #url: https://b4bz.io
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "Draft Translation !"
+  icon: "fa fa-grin"
+  content: "This is a premliminary automatic translation from the French version of <a href='https://www.lesgv.com'>lesgv.com</a>. A little patience please."
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Ditial Good Village"
+    icon: "fa-solid fa-terminal"
+    url: "https://wiki.lesgv.com/en/activites/digital"
+    target: "_blank" # optional attribute of the html tag a target
+  - name: "Les Activités des Grands Voisins"
+    icon: "fa-solid fa-icons"
+    url: "https://com.lesgrandsvoisins.com/c/activites/21"
+    target: "_blank" # optional html a tag attribute target
+  # this link will lead to a second homepage that will load the configuration from additional-page.yml and keep the default configuration values as in config.yml
+  # see the url field and assets/additional-page.yml.dist used in this example:
+  - name: "Mailing List (mailing list)"
+    icon: "fa-solid fa-newspaper"
+    url: "https://www.agoodvillage.org/en/#rencontre" 
+    target: "_blank" # optional html a tag attribute target
+  - name: "français"
+    icon: "fa-solid fa-language" 
+    url: "/fr/"
+
+# Services
+# The top level table represents a group.
+# Leave only an "items" key if you don't use a group (group name, icon and tag style are optional, section separation will not be displayed).
+services :
+  - name: "Websites"
+    icon: "fas-globe"
+    items: 
+      - name: "WWW."
+        logo: "assets/fasvg/globe-solid.svg"
+        subtitle: "Public Website"
+        tag: "web site"
+        keywords: "Les Grands Voisins, Website, Public, Presentation"
+        url: "https://www.agoodvillage.com/en/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Wiki."
+        logo: "assets/fasvg/book-open-reader-solid.svg"
+        subtitle: "Documentation Wiki"
+        tag: "wiki"
+        keywords: "Les Grands Voisins, References, Help, Infomations, Documentation, Wiki, Collective edition"
+        url: "https://wiki.lesgv.com/en/home"
+        target: "_blank" # optional html a tag attribute target
+      - name: "Com. (Forum.)"
+        logo: "assets/fasvg/comment-solid.svg"
+        subtitle: "Communications Forum"
+        tag: "forum"
+        keywords: "Forum, Discourse, Community, Accounts, Discussion"
+        url: "https://com.lesgrandsvoisins.com/"
+        target: "_blank" # optional html a tag attribute target
+      - name: "Blog."
+        logo: "assets/fasvg/rss-solid.svg"
+        subtitle: "News from A Good Village"
+        tag: "communication"
+        keywords: "Ghost, Blog, News, Communication, Info"
+        url: "https://blog.agoodvillage.com/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Forge."
+        logo: "assets/fasvg/pen-ruler-solid.svg"
+        subtitle: "Source Code and Project Management Warehouse"
+        tag: "forge"
+        keywords: "Gitea, Forge, Git, Tickets, Issues, Tickets, Projects, Project management, Source code"
+        url: "https://forge.lesgv.com/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "AppGV.com/fr"
+        logo: "assets/fasvg/language-solid.svg"
+        subtitle: "Ce tableau de bord en français"
+        tag: "français"
+        keywords: "Tableau de boord, français"
+        url: "/fr/"
+      - name: "LesGV.com"
+        logo: "assets/fasvg/gears-solid.svg"
+        subtitle: "A Different Rendering of this Dashboard"
+        tag: "Dashboard"
+        keywords: "Tableau de bord, LesGV"
+        url: "https://www.lesgv.com/en"
+  - name: "Applications"
+    icon: "fas fa-cloud"
+    items: 
+      - name: "Visio. (Meet.)"
+        logo: "assets/fasvg/video-solid.svg"
+        subtitle: "Video-Conferencing"
+        tag: "app"
+        keywords: "Videoconference, Meetings, Visio, Meet, Jitsi"
+        url: "https://visio.lesgv.com/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Mail./SOGo"
+        logo: "assets/fasvg/envelope-open-text-solid.svg"
+        subtitle: "SOGo Webmail with Contacts and Calendar"
+        tag: "webmail"
+        keywords: "Webmail, Contacts, Email, Calendar, Address Book"
+        url: "https://mail.lesgv.com/SOGo/so/login?language=English"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Drive."
+        logo: "assets/fasvg/cloud-solid.svg"
+        subtitle: "Drive in the Cloud with Synchronized, Shareable and Editable Documents"
+        tag: "cloud"
+        keywords: "Drive, Docs, Markdown, Cloud, Seafile, Sync, Share"
+        url: "https://drive.lesgv.com/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "ID."
+        logo: "assets/fasvg/street-view-solid.svg"
+        subtitle: "ID. of GoodVillagers.com"
+        tag: "account"
+        keywords: "KeyCloak, Password, Identity, Account, Single Sign-on, SSO, Authentication"
+        url: "https://id.lesgv.com/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Password"
+        logo: "assets/fasvg/star-of-life-solid.svg"
+        subtitle: "Password management"
+        tag: "app"
+        keywords: "KeePass, KeeWeb, Password management"
+        url: "https://pass.lesgv.com/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Cal."
+        logo: "assets/fasvg/address-book-solid.svg"
+        subtitle: "Caldav Address Books and Agendas"
+        tag: "app"
+        keywords: "Radicale, CalDav, Agenda, Address books"
+        url: "https://cal.lesgrandsvoisins.com/radicale/.web/"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Fossil."
+        logo: "assets/fasvg/pen-ruler-solid.svg"
+        subtitle: "Fossil Source Code and Project Manager"
+        tag: "forge"
+        keywords: "DevOps, Fossil-SCM, Source-Code Management, Project Management, Source Code Management"
+        url: "https://fossil.lesgrandsvoisins.com/"
+        target: "_blank" # optional attribute of the target of the html tag a
+  - name: "Content Management"
+    icon: "fas fa-pen"
+    items: 
+      - name: "Web./Login"
+        logo: "assets/fasvg/pen-solid.svg"
+        subtitle: "Web Content Editing"
+        tag: "webmaster"
+        keywords: "ApostropheCMS, Content Management System, Website editing, Editorial, Communication, Publishing, Compser des sites web"
+        url: "https://web.lesgv.com/Login"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Blog./ghost"
+        logo: "assets/fasvg/rss-solid.svg"
+        subtitle: "News Server Editor Access"
+        tag: "journalist"
+        keywords: "Ghost, Editorial, Edition, Author, Blog, News, Boackoffice, Articles"
+        url: "https://blog.agoodvillage.com/ghost"
+        target: "_blank" # optional html a tag attribute target
+      - name: "LesGV.com/Login"
+        logo: "assets/fasvg/pen-solid.svg"
+        subtitle: "LesGV.com Content Editing"
+        tag: "webmaster"
+        keywords: "Edition of the lesgv.com website"
+        url: "https://www.lesgv.com/Login"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "List."
+        logo: "assets/fasvg/envelopes-bulk-solid.svg"
+        subtitle: "Emailing Publiemailing lists"
+        tag: "emailing"
+        keywords: "ListMonk, Emailing, Mailing lists"
+        url: "https://list.lesgrandsvoisins.com/"
+        target: "_blank" # optional attribute of the html tag a target
+  - name: "Administration"
+    icon: "fas fa-gears"
+    items: 
+      - name: "Mail./iredadmin"
+        logo: "assets/fasvg/envelope-open-text-solid.svg"
+        subtitle: "Mail Server Administration"
+        tag: "backoffice"
+        keywords: "iRedMail, Backoffice, WebAdmin"
+        url: "https://mail.lesgv.com/iredadmin"
+        target: "_blank" # optional attribute of the html tag a target
+      - name: "Admin."
+        logo: "assets/fasvg/sitemap-solid.svg"
+        subtitle: "LDAP Account Management (Backoffice)"
+        tag: "tools"
+        keywords: "Web2Ldap, LDAP, LDAP client, Backoffice"
+        url: "https://admin.village.tel/"
+        target: "_blank" # optional attribute of the html tag a target

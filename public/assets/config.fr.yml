@@ -2,18 +2,19 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
-title: "LesGV.com"
-subtitle: "Tableau de bord"
+title: "App."
+subtitle: "Applications des GrandsVoisins.com (et des GoodVillagers.com)"
 logo: "assets/images/logosquare2.svg"
+icon: ""
 #icon: "fas fa-chess-board" # Optional icon
 
 header: true
 #footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
-footer: 'LesGV.com gère la partie informatique des <a href="https://www.lesgrandsvoisins.com">GrandsVoisins.com</a> et de <a href="https://www.agoodvilalge.com">AGoodVillage.com</a>.'
-columns: "auto"
+footer: 'Les applications (web, etc.) des <a href="https://www.lesgrandsvoisins.com">GrandsVoisins.com</a> et d&apos;A Good Village (<a href="https://www.agoodvillage.com">GoodVillagers.com</a>).'
+columns: 2
 defaults:
-  layout: "list"
-  colorTheme: "light"
+  layout: list
+  colorTheme: light
 stylesheet:
   - "assets/custom.css"
 # Optional theme customization
@@ -57,81 +58,101 @@ colors:
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Le Digital des Grands Voisins"
-    icon: "fa-solid fa-terminal"
-    url: "https://wiki.lesgrandsvoisins.com/fr/activites/digital"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Les Activités des Grands Voisins"
-    icon: "fa-solid fa-icons"
-    url: "https://com.lesgrandsvoisins.com/c/activites/21"
-    target: "_blank" # optional html a tag target attribute
-  # this will link to a second home page that will load config from additional-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additional-page.yml.dist used in this example:
-  - name: "Mailing List"
-    icon: "fa-solid fa-newspaper"
-    url: "https://www.lesgrandsvoisins.com/fr/#rencontre" 
-    target: "_blank" # optional html a tag target attribute
+#  - name: "Le Digital des Grands Voisins"
+#    icon: "fa-solid fa-terminal"
+#    url: "https://wiki.lesgrandsvoisins.com/fr/activites/digital"
+#    target: "_blank" # optional html a tag target attribute
+#  - name: "Les Activités des Grands Voisins"
+#    icon: "fa-solid fa-icons"
+#    url: "https://com.lesgrandsvoisins.com/c/activites/21"
+#    target: "_blank" # optional html a tag target attribute
+#  # this will link to a second home page that will load config from additional-page.yml and keep default config values as in config.yml file
+#  # see url field and assets/additional-page.yml.dist used in this example:
+#  - name: "Mailing List"
+#    icon: "fa-solid fa-newspaper"
+#    url: "https://www.lesgrandsvoisins.com/fr/#rencontre" 
+#    target: "_blank" # optional html a tag target attribute
   - name: "English"
     icon: "fa-solid fa-language" 
-    url: "/en/"
+    url: "https://app.goodvillagers.com"
+  - name: "GrandsVoisins.com"
+    icon: "fa-solid fa-globe" 
+    url: "https://www.lesgrandsvoisins.com/fr"
+  - name: "AppGV.com"
+    icon: "fa-solid fa-braille" 
+    url: "https://www.appgv.com/fr"
+  - name: "Wiki."
+    icon: "fa-solid fa-book-open-reader" 
+    logo: "assets/fasvg/book-open-reader-solid.svg"
+    subtitle: "Wiki documentaire"
+    tag: "wiki"
+    keywords: "Les Grands Voisins, Références, Aide, Infomations, Documentation, Wiki, Edition collective"
+    url: "https://wiki.lesgv.com/fr/home"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Com."
+    icon: "fa-solid fa-comment" 
+    logo: "assets/fasvg/comment-solid.svg"
+    subtitle: "Forum de communication"
+    tag: "forum"
+    keywords: "Forum, Discourse, Communautaire, Comptes, Discussion"
+    url: "https://com.lesgrandsvoisins.com/"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Blog."
+    icon: "fa-solid fa-rss" 
+    logo: "assets/fasvg/rss-solid.svg"
+    subtitle: "Blog des nouvelles des GrandsVoisins.com"
+    tag: "communication"
+    keywords: "Ghost, Blog, News, Communication, Infos"
+    url: "https://blog.lesgrandsvoisins.com/"
+    target: "_blank" # optional html a tag target attribute
 # Services
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+#      - name: "WWW."
+#        logo: "assets/fasvg/globe-solid.svg"
+#        subtitle: "Site Web Public"
+#        tag: "website"
+#        keywords: "Les Grands Voisins, Website, Public, Présentation"
+#        url: "https://www.lesgrandsvoisins.com/fr/"
+#        target: "_blank" # optional html a tag target attribute
+#      - name: "Wiki."
+#        logo: "assets/fasvg/book-open-reader-solid.svg"
+#        subtitle: "Wiki documentaire"
+#        tag: "wiki"
+#        keywords: "Les Grands Voisins, Références, Aide, Infomations, Documentation, Wiki, Edition collective"
+#        url: "https://wiki.lesgv.com/fr/home"
+#        target: "_blank" # optional html a tag target attribute
+#      - name: "Com. (Forum.)"
+#        logo: "assets/fasvg/comment-solid.svg"
+#        subtitle: "Forum de communication"
+#        tag: "forum"
+#        keywords: "Forum, Discourse, Communautaire, Comptes, Discussion"
+#        url: "https://com.lesgrandsvoisins.com/"
+#        target: "_blank" # optional html a tag target attribute
+#      - name: "Blog."
+#        logo: "assets/fasvg/rss-solid.svg"
+#        subtitle: "Blog des nouvelles des GrandsVoisins.com"
+#        tag: "communication"
+#        keywords: "Ghost, Blog, News, Communication, Infos"
+#        url: "https://blog.lesgrandsvoisins.com/"
+#        target: "_blank" # optional html a tag target attribute
+#      - name: "AppGV.com/en"
+#        logo: "assets/fasvg/language-solid.svg"
+#        subtitle: "This Dashboard in English"
+#        tag: "English"
+#        keywords: "Dashboard English"
+#        url: "/en/"
+#      - name: "LesGV.com"
+#        logo: "assets/fasvg/gears-solid.svg"
+#        subtitle: "Ce tableau de bord fait autrement"
+#        tag: "Tableau de bord"
+#        keywords: "Tableau de bord, LesGV"
+#        url: "https://www.lesgv.com/fr"
 services:
-  - name: "Sites"
-    icon: "fas fa-globe"
+  - name: "Communication"
+    icon: "fas fa-comments"
     items:
-      - name: "WWW."
-        logo: "assets/fasvg/globe-solid.svg"
-        subtitle: "Site Web Public"
-        tag: "website"
-        keywords: "Les Grands Voisins, Website, Public, Présentation"
-        url: "https://www.lesgrandsvoisins.com/fr/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Wiki."
-        logo: "assets/fasvg/book-open-reader-solid.svg"
-        subtitle: "Wiki documentaire"
-        tag: "wiki"
-        keywords: "Les Grands Voisins, Références, Aide, Infomations, Documentation, Wiki, Edition collective"
-        url: "https://wiki.lesgv.com/fr/home"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Com. (Forum.)"
-        logo: "assets/fasvg/comment-solid.svg"
-        subtitle: "Forum de communication"
-        tag: "forum"
-        keywords: "Forum, Discourse, Communautaire, Comptes, Discussion"
-        url: "https://com.lesgrandsvoisins.com/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Blog."
-        logo: "assets/fasvg/rss-solid.svg"
-        subtitle: "Blog des nouvelles des GrandsVoisins.com"
-        tag: "communication"
-        keywords: "Ghost, Blog, News, Communication, Infos"
-        url: "https://blog.lesgrandsvoisins.com/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Forge."
-        logo: "assets/fasvg/pen-ruler-solid.svg"
-        subtitle: "Entrepôt de codes sources et de gestion de projets"
-        tag: "forge"
-        keywords: "Gitea, Forge, Git, Tickets, Issues, Billets, Projets, Gestion de projet, Code source"
-        url: "https://forge.lesgv.com/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "AppGV.com/en"
-        logo: "assets/fasvg/language-solid.svg"
-        subtitle: "This Dashboard in English"
-        tag: "English"
-        keywords: "Dashboard English"
-        url: "/en/"
-      - name: "LesGV.com"
-        logo: "assets/fasvg/gears-solid.svg"
-        subtitle: "Ce tableau de bord fait autrement"
-        tag: "Tableau de bord"
-        keywords: "Tableau de bord, LesGV"
-        url: "https://www.lesgv.com/fr"
-  - name: "Applications"
-    icon: "fas fa-cloud"
-    items:
-      - name: "Visio. (Meet.)"
+      - name: "Meet."
         logo: "assets/fasvg/video-solid.svg"
         subtitle: "Visioconférence"
         tag: "app"
@@ -145,6 +166,9 @@ services:
         keywords: "Webmail, Contacts, Email, Calendrier, Agenda, Carnet d'addresses"
         url: "https://mail.lesgv.com/SOGo/so/login?language=French"
         target: "_blank" # optional html a tag target attribute
+  - name: "Bureautique"
+    icon: "fas fa-house-laptop"
+    items:
       - name: "Drive."
         logo: "assets/fasvg/cloud-solid.svg"
         subtitle: "Drive dans le cloud avec documents synchronisés, partagables et éditables"
@@ -173,19 +197,12 @@ services:
         keywords: "Radicale, CalDav, Agenda, Carnets d'addresses"
         url: "https://cal.lesgrandsvoisins.com/radicale/.web/"
         target: "_blank" # optional html a tag target attribute
-      - name: "Fossil."
-        logo: "assets/fasvg/pen-ruler-solid.svg"
-        subtitle: "Fossil gestionnaire de codes sources et de projets"
-        tag: "forge"
-        keywords: "DevOps, Fossil-SCM, Source-Code Management, Gestion de projet, Gestion de codes sources"
-        url: "https://fossil.lesgrandsvoisins.com/"
-        target: "_blank" # optional html a tag target attribute
-  - name: "Gestion de contenus"
-    icon: "fas fa-pen"
+  - name: "Edition Web"
+    icon: "fas fa-feather-pointed"
     items:
       - name: "Web./Login"
         logo: "assets/fasvg/pen-solid.svg"
-        subtitle: "Edition de contenus webs"
+        subtitle: "Edition de contenus sur web.grandsvoisins.com"
         tag: "webmaster"
         keywords: "ApostropheCMS, Système de gestion de contenu, Edition de sites web, Editorial, Communication, Edition, Compser des sites webs"
         url: "https://web.lesgv.com/Login"
@@ -206,7 +223,7 @@ services:
         target: "_blank" # optional html a tag target attribute
       - name: "List."
         logo: "assets/fasvg/envelopes-bulk-solid.svg"
-        subtitle: "Emailing: Listes de publemailing"
+        subtitle: "Emailing: Listes de publiemailing"
         tag: "emailing"
         keywords: "ListMonk, Emailing, Listes de diffusion"
         url: "https://list.lesgrandsvoisins.com/"
@@ -214,6 +231,20 @@ services:
   - name: "Administration"
     icon: "fas fa-gears"
     items:
+      - name: "Forge."
+        logo: "assets/fasvg/pen-ruler-solid.svg"
+        subtitle: "Entrepôt de codes sources et de gestion de projets"
+        tag: "forge"
+        keywords: "Gitea, Forge, Git, Tickets, Issues, Billets, Projets, Gestion de projet, Code source"
+        url: "https://forge.lesgv.com/"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Fossil."
+        logo: "assets/fasvg/pen-ruler-solid.svg"
+        subtitle: "Fossil gestionnaire de codes sources et de projets"
+        tag: "forge"
+        keywords: "DevOps, Fossil-SCM, Source-Code Management, Gestion de projet, Gestion de codes sources"
+        url: "https://fossil.lesgrandsvoisins.com/"
+        target: "_blank" # optional html a tag target attribute
       - name: "Mail./iredadmin"
         logo: "assets/fasvg/envelope-open-text-solid.svg"
         subtitle: "Administration du serveur d'email"
